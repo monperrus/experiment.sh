@@ -4,11 +4,9 @@ Run computational experiments through the Github architecture.
 
 ## How to us it?
 
-Simply push a branch to https://github.com/monperrus/experiment.sh/ containing a script `experiment.sh`.
-
-`experiment.sh` is execuetd using bash.
-
-The branch status contains a link to the log.
+* ask to be added to this repo
+* push a branch to https://github.com/monperrus/experiment.sh/, this branch must contain a script called `experiment.sh`.
+* look at the log set as a a branch status
 
 ## Available environment variables
 
