@@ -2,7 +2,11 @@
 
 Run computational experiments through the Github architecture.
 
-## How to us it?
+The idea is that exach branch in a Github repo is an experiment per se.
+
+We use the commit status URL to give the link to the result of the experiment.
+
+## How to use it?
 
 * ask to be added to this repo
 * push a branch to https://github.com/monperrus/experiment.sh/, this branch must contain a script called `experiment.sh`.
@@ -10,12 +14,12 @@ Run computational experiments through the Github architecture.
 
 ## Available environment variables
 
-* BUILD_NUMBER The current build number, such as "153"
-* BUILD_ID The current build ID, identical to BUILD_NUMBER for builds created in 1.597+, but a YYYY-MM-DD_hh-mm-ss timestamp for older builds
-* BUILD_URL Full URL of this build, like http://server:port/jenkins/job/foo/15/ (Jenkins URL must be set)
 * GIT_COMMIT The commit hash being checked out.
-* GIT_BRANCH The remote branch name, if any.
+* GIT_BRANCH The branch name being used.
 
+## Backend
+
+Several backends can support experiment.sh. For now, the backend is implemented using Jenkins
 
 ## See also
 
