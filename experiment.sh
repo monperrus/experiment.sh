@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo hello world
-sleep 2
+sleep 1
