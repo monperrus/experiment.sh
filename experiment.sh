@@ -7,3 +7,4 @@ hostname
 free -h
 java -version
 mvn -version
+env
