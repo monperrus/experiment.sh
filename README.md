@@ -26,6 +26,32 @@ See https://github.com/monperrus/experiment.sh/branches
 
 Several backends can support experiment.sh. For now, the backend is implemented using Jenkins
 
+### Jenkins backend
+
+* install plugin "Pipeline: Multibranch with defaults"
+* create runner file "Manage Jenkins >> Manage file" with name "experiment.sh-runner" of type "Groovy" and content below
+* create job "Multibranch Pipeline with defaults"
+* run a first job (this triggers a script approval request)
+* validate script "Manage Jenkins >> In-process script approval"
+* done (this set commit statuses as well)
+
+Jenkinsfile  content:
+
+```groovy
+println('running experiment')
+pipeline {
+    agent any
+    stages {
+        stage('run') {
+            steps {
+              sh "bash experiment.sh"
+            }
+        }
+    }
+}
+println('experiment done')
+```
+
 ## See also
 
 * [Open-science and Travis: continuous integration for reproducible scientific experiments](https://www.monperrus.net/martin/travis-for-scientific-experiments)
