@@ -35,3 +35,5 @@ curl -Lo repairnator-pipeline.jar "https://search.maven.org/remote_content?g=fr.
 java -jar repairnator-pipeline.jar --build 609853598
 curl -Lo repairnator-pipeline.jar "https://search.maven.org/remote_content?g=fr.inria.repairnator&a=repairnator-pipeline&v=LATEST&c=jar-with-dependencies"
 java -jar repairnator-pipeline.jar --build 609542849
+curl -Lo repairnator-pipeline.jar "https://search.maven.org/remote_content?g=fr.inria.repairnator&a=repairnator-pipeline&v=LATEST&c=jar-with-dependencies"
+java -jar repairnator-pipeline.jar --build 609075582
